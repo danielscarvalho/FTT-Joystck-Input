@@ -8,6 +8,7 @@ import net.java.games.input.Component.Identifier;
 // Referências:
 //
 // https://github.com/jinput/jinput
+// https://fivedots.coe.psu.ac.th/~ad/jg2/ch11/GamePadIntro.pdf - Java Prog. Techniques for Games. Chapter 28.9. Game Pad
 // http://www.bartneck.de/2017/08/14/tutorial-on-how-to-install-and-setup-jinput-on-mac-os-x-using-eclipse/
 // http://www.gametutorial.net/article/JInput-Joystick-Test
 //
