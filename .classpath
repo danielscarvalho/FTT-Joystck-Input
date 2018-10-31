@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/soft/Java/jdk1.8.0_171/jre/lib/ext/jinput.jar"/>
+	<classpathentry kind="lib" path="W:/Professores/Prof. Daniel Carvalho/TP2-Java/JInput/lib/jinput.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

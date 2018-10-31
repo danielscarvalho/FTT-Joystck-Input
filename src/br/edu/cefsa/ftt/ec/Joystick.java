@@ -40,7 +40,7 @@ public class Joystick {
 		for (int i = 0; i < components.length; i++)
 			System.out.println("Componente do Joystick: " + components[i]);
 		 
-		Boolean loop = true;
+		Boolean loop = true;// Loop infinito
 		while(loop) {
 			 
 			if (!controller.poll()) {
@@ -57,7 +57,7 @@ public class Joystick {
 		            
 					Identifier componentIdentifier = component.getIdentifier();
 		              
-		            // Buttons
+		            // Buttons - digital components
 		            // If the language is not english, this won't work...
 		            if(componentIdentifier.getName().matches("^[0-9]*$") &
 		            		component.getName().contains("Botão")) { // If the component identifier name contains only numbers, then this is a button.
@@ -70,7 +70,7 @@ public class Joystick {
 		                    continue;
 		            } //if - buttons
 		               
-		            // Hat switch
+		            // Hat switch - stick
 		            if(componentIdentifier == Component.Identifier.Axis.POV){
 		                float hatSwitchPosition = component.getPollData();
 		                System.out.println(hatSwitchPosition);
@@ -79,7 +79,7 @@ public class Joystick {
 		                continue;
 		            } // if hat
 		             
-		            // Axes
+		            // Axes - analog components...
 		            if(component.isAnalog()) {
 		                float axisValue = component.getPollData(); //calcular %...
 		                    
@@ -110,7 +110,7 @@ public class Joystick {
 			} //if
 				    
             try {
-            	Thread.sleep(30);
+            	Thread.sleep(30); //30 milisegundos >>> 1000 = 1 segundo
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
